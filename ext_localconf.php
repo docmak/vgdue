@@ -7,15 +7,13 @@ if (!defined('TYPO3_MODE')) {
 	'USCHI.' . $_EXTKEY,
 	'Person',
 	array(
+        'Language' => 'list',
 		'Person' => 'list',
-		'Language' => 'list',
-		
 	),
 	// non-cacheable actions
 	array(
-		'Person' => '',
 		'Language' => '',
-		
+        'Person' => '',
 	)
 );
 

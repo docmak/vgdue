@@ -35,6 +35,12 @@ namespace USCHI\TuVgdue\Domain\Repository;
  */
 class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
+    protected $defaultOrderings = array(
+        'name' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
+    );
+
+
+
     /**
      * @return array
      */
@@ -45,6 +51,7 @@ class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
     }
 
 
+
     /**
      * @param $records
      * @return array
@@ -52,17 +59,35 @@ class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
     private function sortRecords($records){
         $sortedRecords = array();
         $count = count($records);
+        switch ($count%3){
+            case 2:
+                $modulo = $count;
+                break;
+            case 1:
+                $modulo = $count+1;
+                break;
+            default:
+                $modulo = $count-1;
+                break;
+        }
         $i = 0;
         foreach($records as $record){
             $sortedRecords[$i] = $record;
-            $i = ($i+3)%($count+1);
+            var_dump($sortedRecords);
+            $i = ($i+3)%($modulo);
+            echo('<br/><br/>');
+            var_dump($i);
+            echo('<br/><br/>');
         }
+        var_dump($sortedRecords);
         $numberOfSpaces = (ceil(count($records)/3))*3;
         $sortedRecords = $this->fillEmptySpaces($sortedRecords, $numberOfSpaces);
+        ksort($sortedRecords);
         return $sortedRecords;
     }
 
 
+    
     /**
      * @param array $sortedRecords
      * @param int $numberOfSpaces
@@ -71,7 +96,7 @@ class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
     private function fillEmptySpaces($sortedRecords, $numberOfSpaces){
         for($j=0;$j<$numberOfSpaces;$j++){
             if(!array_key_exists($j,$sortedRecords)){
-                $sortedRecords[$j]='EMPTY';
+                $sortedRecords[$j]='0';
             }
         }
         return $sortedRecords;
