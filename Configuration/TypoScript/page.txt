@@ -27,6 +27,7 @@ page.10 {
 
 page.includeCSS { 
   file1 = EXT:tu_vgdue/Resources/Public/CSS/main.css
+  file2 = EXT:tu_vgdue/Resources/Public/CSS/content.css
  }
  page.headerData{
  	20 = TEXT
