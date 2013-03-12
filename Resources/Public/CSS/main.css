@@ -75,9 +75,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ac04', end
 	float: right;
 	width: 330px;
 }
-.active{
-		background-color: #f2ac04;
-}
+
+
 a.active {
 	color: #ffffff;
+	padding-top: 20px;
 }
