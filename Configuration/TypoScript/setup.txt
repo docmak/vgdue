@@ -13,6 +13,10 @@ plugin.tx_tuvgdue {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
 	}
+	settings {
+		personPid = {$plugin.tx_tuvgdue.pages.personPid}
+		languagesPid = {$plugin.tx_tuvgdue.pages.languagesPid}
+	}
 }
 
 plugin.tx_tuvgdue._CSS_DEFAULT_STYLE (

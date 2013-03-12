@@ -3,11 +3,20 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    $_EXTKEY,
+    'Languages',
+    'Sprachen'
+);
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
 	'Person',
 	'Personen'
 );
+
+
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'VGDUE');
 
