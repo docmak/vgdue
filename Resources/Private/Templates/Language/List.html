@@ -23,7 +23,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
         <f:if condition="{language}">
             <f:then>
                 <div class="language-item">
-                    <f:link.action action="list" controller="Person" plugin="Person" pageUid="{settings.personPid}" arguments="{language : language}">{language.name}</f:link.action>
+                    <f:link.action action="list" controller="Person" pluginName="Person" pageUid="{settings.personPid}" arguments="{language : language}">{language.name}</f:link.action>
                 </div>
             </f:then>
             <f:else>
