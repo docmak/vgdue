@@ -8,3 +8,10 @@ page.10 {
    #  headerLogo < temp.headerLogo
    #}
 }
+page.includeCSS { 
+  file1 = EXT:tu_vgdue/Resources/Public/CSS/main.css
+ }
+ page.headerData{
+ 	20 = TEXT
+ 	20.value = <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+ }
