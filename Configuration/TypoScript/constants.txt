@@ -1,0 +1,14 @@
+plugin.tx_tuvgdue {
+	view {
+		# cat=plugin.tx_tuvgdue/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:tu_vgdue/Resources/Private/Templates/
+		# cat=plugin.tx_tuvgdue/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:tu_vgdue/Resources/Private/Partials/
+		# cat=plugin.tx_tuvgdue/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:tu_vgdue/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_tuvgdue//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

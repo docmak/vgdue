@@ -1,0 +1,39 @@
+plugin.tx_tuvgdue {
+	view {
+		templateRootPath = {$plugin.tx_tuvgdue.view.templateRootPath}
+		partialRootPath = {$plugin.tx_tuvgdue.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_tuvgdue.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_tuvgdue.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_tuvgdue._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-tu-vgdue table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-tu-vgdue table th {
+		font-weight:bold;
+	}
+
+	.tx-tu-vgdue table td {
+		vertical-align:top;
+	}
+)

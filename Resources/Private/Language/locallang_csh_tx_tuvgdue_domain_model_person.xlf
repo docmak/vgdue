@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-12T20:17:02Z" product-name="tu_vgdue">
+		<header/>
+		<body>
+
+			<trans-unit id="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>telephone</source>
+			</trans-unit>
+			<trans-unit id="mobile_phone.description">
+				<source>mobilePhone</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>address</source>
+			</trans-unit>
+			<trans-unit id="interpreter.description">
+				<source>interpreter</source>
+			</trans-unit>
+			<trans-unit id="translator.description">
+				<source>translator</source>
+			</trans-unit>
+			<trans-unit id="languages.description">
+				<source>languages</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

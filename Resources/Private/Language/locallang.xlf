@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-12T20:17:02Z" product-name="tu_vgdue">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_tuvgdue_domain_model_person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.first_name">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.last_name">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.email">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.image">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.telephone">
+				<source>telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.mobile_phone">
+				<source>mobilePhone</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.address">
+				<source>address</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.interpreter">
+				<source>interpreter</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.translator">
+				<source>translator</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_person.languages">
+				<source>languages</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_tuvgdue_domain_model_language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tx_tuvgdue_domain_model_language.name">
+				<source>name</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>
