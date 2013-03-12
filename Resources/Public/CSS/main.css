@@ -1,8 +1,18 @@
 body{
 	background-color: #b2b2b2;
+	
 }
-
+.background-map{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+}
 #layer1{
+	width: 960px;
+	margin:auto;
+}
+#layer2{
 	background-color: #ffffff;
 	-webkit-box-shadow: 7px -7px 11px #9b9e9a;	/* webkit browser*/ -moz-box-shadow: 7px -7px 11px #9b9e9a;	/* firefox */ box-shadow: 7px -7px 11px #9b9e9a;
 	width: 960px;
@@ -80,4 +90,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ac04', end
 a.active {
 	color: #ffffff;
 	padding-top: 20px;
+}
+.meta-menu a{
+	color: #000;
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	float: right;
 }
