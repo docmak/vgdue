@@ -16,17 +16,17 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<div style="width:310px;">
+<div class="language-container">
 
     <f:for each="{languages}" as="language">
         <f:if condition="{language}">
             <f:then>
-                <div style="width:100px;float:left;display:inline-block;">
+                <div class="language-item">
                     <f:link.action action="list" controller="Person" arguments="{language : language}">{language.name}</f:link.action>
                 </div>
             </f:then>
             <f:else>
-                <div style="width:100px;float:left;display:inline-block;">
+                <div class="language-item">
                     EMPTY
                 </div>
             </f:else>
