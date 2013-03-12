@@ -16,5 +16,7 @@ plugin.tx_tuvgdue {
 		languagesPid =
 		# cat=plugin.tx_tuvgdue//a; type=string; label=person PID
 		personPid =
+		# cat=plugin.tx_tuvgdue//a; type=string; label=disclaimer PID
+		disclaimerPid =
 	}
 }

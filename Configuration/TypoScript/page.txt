@@ -22,6 +22,9 @@ page.10 {
      content < styles.content.get
      border < styles.content.getBorder
      menu < headermenu
+     #disclaimer < {$plugin.tx_tuvgdue.pages.disclaimerPid}
+     disclaimer = TEXT
+     disclaimer.value = {$plugin.tx_tuvgdue.pages.disclaimerPid}
    }
 }
 
