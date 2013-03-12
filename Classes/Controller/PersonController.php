@@ -50,8 +50,19 @@ class PersonController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
      * @param \USCHI\TuVgdue\Domain\Model\Language $language
      * @return void
      */
-	public function listAction(Language $language) {
-		$persons = $this->personRepository->findAllByLanguages($language);
+	public function listAction(Language $languageToDisplay) {
+
+		$allPersons = $this->personRepository->findAll();
+        $persons = array();
+        foreach($allPersons as $person){
+            $languages = $person->getLanguages();
+            foreach($languages as $language){
+                if($language == $languageToDisplay){
+                    array_push($persons, $person);
+                }
+            }
+        }
+
 		$this->view->assign('persons', $persons);
 	}
 
