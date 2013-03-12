@@ -73,13 +73,8 @@ class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
         $i = 0;
         foreach($records as $record){
             $sortedRecords[$i] = $record;
-            var_dump($sortedRecords);
             $i = ($i+3)%($modulo);
-            echo('<br/><br/>');
-            var_dump($i);
-            echo('<br/><br/>');
         }
-        var_dump($sortedRecords);
         $numberOfSpaces = (ceil(count($records)/3))*3;
         $sortedRecords = $this->fillEmptySpaces($sortedRecords, $numberOfSpaces);
         ksort($sortedRecords);
@@ -87,7 +82,7 @@ class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
     }
 
 
-    
+
     /**
      * @param array $sortedRecords
      * @param int $numberOfSpaces
