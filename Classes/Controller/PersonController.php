@@ -1,5 +1,6 @@
 <?php
 namespace USCHI\TuVgdue\Controller;
+use USCHI\TuVgdue\Domain\Model\Language;
 
 /***************************************************************
  *  Copyright notice
@@ -43,13 +44,14 @@ class PersonController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 	 */
 	protected $personRepository;
 
-	/**
-	 * action list
-	 *
-	 * @return void
-	 */
-	public function listAction() {
-		$persons = $this->personRepository->findAll();
+    /**
+     * action list
+     *
+     * @param \USCHI\TuVgdue\Domain\Model\Language $language
+     * @return void
+     */
+	public function listAction(Language $language) {
+		$persons = $this->personRepository->findAllByLanguages($language);
 		$this->view->assign('persons', $persons);
 	}
 

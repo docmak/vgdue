@@ -49,7 +49,7 @@ class LanguageController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 	 * @return void
 	 */
 	public function listAction() {
-		$languages = $this->languageRepository->findAll();
+		$languages = $this->languageRepository->findAllAndSort();
 		$this->view->assign('languages', $languages);
 	}
 

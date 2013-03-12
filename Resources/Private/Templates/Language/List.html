@@ -16,21 +16,15 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_tuvgdue" >
-	<tr>
-		<th><f:translate key="tx_tuvgdue_domain_model_language.name" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
+<div class="language-outer">
 
-	<f:for each="{languages}" as="language">
-		<tr>
-			<td><f:link.action action="show" arguments="{language : language}"> {language.name}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{language : language}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{language : language}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
+    <f:for each="{languages}" as="language">
+        <div class="language-inner">
+            <f:link.action action="list" controller="Person" arguments="{language : language}">{language.name}</f:link.action>
+        </div>
+    </f:for>
+
+</div>
 
 <f:link.action action="new">New Language</f:link.action>
 </f:section>

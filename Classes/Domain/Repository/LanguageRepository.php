@@ -35,5 +35,47 @@ namespace USCHI\TuVgdue\Domain\Repository;
  */
 class LanguageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
+    /**
+     * @return array
+     */
+    public function findAllAndSort(){
+        $records = $this->findAll();
+        $sortedRecords = $this->sortRecords($records);
+        return $sortedRecords;
+    }
+
+
+    /**
+     * @param $records
+     * @return array
+     */
+    private function sortRecords($records){
+        $sortedRecords = array();
+        $count = count($records);
+        $i = 0;
+        foreach($records as $record){
+            $sortedRecords[$i] = $record;
+            $i = ($i+3)%($count+1);
+        }
+        $numberOfSpaces = (ceil(count($records)/3))*3;
+        $sortedRecords = $this->fillEmptySpaces($sortedRecords, $numberOfSpaces);
+        return $sortedRecords;
+    }
+
+
+    /**
+     * @param array $sortedRecords
+     * @param int $numberOfSpaces
+     * @return array
+     */
+    private function fillEmptySpaces($sortedRecords, $numberOfSpaces){
+        for($j=0;$j<$numberOfSpaces;$j++){
+            if(!array_key_exists($j,$sortedRecords)){
+                $sortedRecords[$j]='EMPTY';
+            }
+        }
+        return $sortedRecords;
+    }
+
 }
 ?>
