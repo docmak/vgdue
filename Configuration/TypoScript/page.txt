@@ -20,6 +20,7 @@ page.10 {
    layoutRootPath = EXT:tu_vgdue/Resources/Private/Layouts/
    variables {
      content < styles.content.get
+     border < styles.content.getBorder
      menu < headermenu
    }
 }

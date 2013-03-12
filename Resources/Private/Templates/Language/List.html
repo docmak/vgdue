@@ -15,6 +15,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <h1>Listing for Language</h1>
 
 <f:flashMessages />
+    <f:debug>{_all}</f:debug>
 
 <div class="language-container">
 
@@ -22,7 +23,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
         <f:if condition="{language}">
             <f:then>
                 <div class="language-item">
-                    <f:link.action action="list" controller="Person" arguments="{language : language}">{language.name}</f:link.action>
+                    <f:link.action action="list" controller="Person" plugin="Person" pageUid="{settings.personPid}" arguments="{language : language}">{language.name}</f:link.action>
                 </div>
             </f:then>
             <f:else>
