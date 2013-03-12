@@ -1,0 +1,10 @@
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+   file = EXT:tu_vgdue/Resources/Private/Templates/Page/Index.html
+   partialRootPath = EXT:tu_vgdue/Resources/Private/Partials/
+   layoutRootPath = EXT:tu_vgdue/Resources/Private/Layouts/
+   #variables {
+   #  headerLogo < temp.headerLogo
+   #}
+}

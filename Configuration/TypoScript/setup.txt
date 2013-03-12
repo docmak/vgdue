@@ -1,3 +1,5 @@
+
+
 plugin.tx_tuvgdue {
 	view {
 		templateRootPath = {$plugin.tx_tuvgdue.view.templateRootPath}
@@ -37,3 +39,5 @@ plugin.tx_tuvgdue._CSS_DEFAULT_STYLE (
 		vertical-align:top;
 	}
 )
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tu_vgdue/Configuration/TypoScript/page.txt">
