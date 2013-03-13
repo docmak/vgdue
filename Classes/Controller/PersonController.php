@@ -63,6 +63,7 @@ class PersonController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
             }
         }
 
+        $this->view->assign('language', $languageToDisplay);
 		$this->view->assign('persons', $persons);
 	}
 

@@ -43,5 +43,7 @@ plugin.tx_tuvgdue._CSS_DEFAULT_STYLE (
 		vertical-align:top;
 	}
 )
+config.spamProtectEmailAddresses = 2 
+config.spamProtectEmailAddresses_atSubst = <span>&#064;</span>
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:tu_vgdue/Configuration/TypoScript/page.txt">
