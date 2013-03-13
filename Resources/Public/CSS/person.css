@@ -14,7 +14,43 @@
 	text-decoration: underline;
 }
 
-.person-item-eMail{}
+.person-item-eMail{
+	font-family: 'Roboto' sans-serif;
+	font-size: 14px;
+color: #050505;
+	padding: 5px 20px 5px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#f0f0f0 0%,
+		#b4f0c7 50%,
+		#a7dbb7 50%,
+		#b1e5c2);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#f0f0f0),
+		color-stop(0.50, #b4f0c7),
+		color-stop(0.50, #a7dbb7),
+		to(#b1e5c2));
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #8a8a8a;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+		margin:5px 0px 5px 0px;
+		width: 120px;
+}
+
 .person-item-image{
 	float: right;
 	margin-bottom: 5px;
