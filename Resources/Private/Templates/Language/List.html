@@ -18,9 +18,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
     <f:debug>{_all}</f:debug>
 
 <div class="language-container">
-    <div class="page-image">
-        <f:image src="EXT:tu_vgdue/Resources/Public/Images/Hessen.png" width="200" height="260" alt="Justitzlogo Hessen"/>
-    </div>
+    
     <f:for each="{languages}" as="language">
         <f:if condition="{language}">
             <f:then>
@@ -37,5 +35,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
     </f:for>
     
 </div>
+<div class="page-image">
+        <f:image src="EXT:tu_vgdue/Resources/Public/Images/Hessen.png" class="page-image-img" alt="Justitzlogo Hessen"/>
+    </div>
+<div class="clear"></div>
 
 </f:section>
