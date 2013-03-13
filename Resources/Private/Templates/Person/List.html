@@ -12,6 +12,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
+<div class="person-plugin" >
 <f:link.action action="list" controller="Language" pluginName="Languages" pageUid="{settings.languagesPid}">« zurück</f:link.action><h1>{language.name}</h1>
 
 <f:flashMessages />
@@ -64,5 +65,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	</f:for>
 	<div class="legend"><b>D</b> allgemein vereidigte/r Dolmetscher/in</div>
 	<div class="legend"><b>Ü</b> ermächtigte/r Übersetzer/in</div>
+	
+    <!--<div class="clear"></div>-->
+</div>
+<div class="page-person-image">
+        <f:image src="EXT:tu_vgdue/Resources/Public/Images/gericht.png" class="page-person-img" alt="Justitzlogo Hessen"/>
+</div>
 </div>
 </f:section>

@@ -81,3 +81,18 @@ background: linear-gradient(to right,  rgba(96,96,96,1) 0%,rgba(43,43,43,0.6) 55
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 margin-bottom: 10px
 }
+.page-person-image{
+	width: 100%
+}
+.page-person-img{
+	width: 300px;
+	height: auto;
+	position: absolute;
+	right: -40px;
+	bottom: -50px;
+}
+.person-plugin{
+	position: relative;
+	min-height: 400px;
+
+}
