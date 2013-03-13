@@ -20,10 +20,18 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 	<f:for each="{persons}" as="person">
 		<div class="one-person">
+				<f:if condition="{person.image}">
+				<f:then>
+				<div class="person-item-image">
+					<f:image src="uploads/tx_tuvgdue/{person.image}" width="200" height="150" alt="Person-Image" />
+				</div>
+				</f:then>
+				<f:else>
+					<div class="person-item-image"></div>
+				</f:else>
+			</f:if>
 			<div class="person-item-Name">{person.firstName} {person.lastName}</div>
-			<div class="person-item-image">
-					<f:image src="uploads/tx_tuvgdue/{person.image}" alt="Person-Image" width="100"/>
-			</div>
+
 			<div class="person-item-adress">{person.address}</div>
 			<div class="person-item-telefone">Tel: {person.telephone}</div>
 			<div class="person-item-mobile">Mobil: {person.mobilePhone}</div>

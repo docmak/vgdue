@@ -5,7 +5,9 @@
 	color: #555;
 }
 .one-person{
-	margin: 10px 0px 10px 0px
+	margin: 10px 0px 10px 0px;
+	width:400px;
+	min-height: 130px
 }
 .person-item-Name{
 	font-weight: 500;
@@ -13,7 +15,10 @@
 }
 
 .person-item-eMail{}
-.person-item-image{}
+.person-item-image{
+	float: right;
+	margin-bottom: 5px;
+}
 .person-item-telefone{}
 .person-item-mobile{}
 .person-item-adress{}
