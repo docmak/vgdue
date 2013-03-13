@@ -12,7 +12,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>{language.name}</h1>
+<f:link.action action="list" controller="Language" pluginName="Languages" pageUid="{settings.languagesPid}">« zurück</f:link.action><h1>{language.name}</h1>
 <f:debug>{_all}</f:debug>
 <f:flashMessages />
 

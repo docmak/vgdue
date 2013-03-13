@@ -1,7 +1,7 @@
 .language-container{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 18px;
 	color: #555;
 	width: 603px;
 
@@ -18,4 +18,10 @@
 .language-item{
 	width: 200px;
 	float: left;
+	margin-bottom: 10px;
+}
+.page-image{
+	width: 200px;
+	height: 260px;
+	float: right;
 }
